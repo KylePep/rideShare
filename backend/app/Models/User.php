@@ -22,6 +22,11 @@ class User extends Authenticatable
         'password',
     ];
 
+    public function routeNotificationForTwilio()
+    {
+        return $this->phone;
+    } 
+
     /**
      * The attributes that should be hidden for serialization.
      *
